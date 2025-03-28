@@ -1,58 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prayer Times"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/inoru_prayer_times_background" />
 
-    <TextView
-        android:id="@+id/tvFajr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fajr: 05:00 AM"
-        android:textSize="18sp"
-        android:padding="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvDhuhr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dhuhr: 12:00 PM"
-        android:textSize="18sp"
-        android:padding="8dp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/tvHeading"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Prayer Times"-->
+<!--                    android:textSize="24sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:paddingBottom="16dp"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--        -->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvFajr"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Fajr: 05:00 AM"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--        -->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvDhuhr"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Dhuhr: 12:00 PM"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--        -->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvAsr"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Asr: 03:30 PM"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--        -->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvMaghrib"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Maghrib: 06:15 PM"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--        -->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvIsha"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Isha: 08:00 PM"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textColor="@android:color/white" />-->
 
-    <TextView
-        android:id="@+id/tvAsr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Asr: 03:30 PM"
-        android:textSize="18sp"
-        android:padding="8dp" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvMaghrib"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maghrib: 06:15 PM"
-        android:textSize="18sp"
-        android:padding="8dp" />
-
-    <TextView
-        android:id="@+id/tvIsha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Isha: 08:00 PM"
-        android:textSize="18sp"
-        android:padding="8dp" />
-
-</LinearLayout>
+        </FrameLayout>

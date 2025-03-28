@@ -31,11 +31,11 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         // Get references to the TextViews defined in activity_main.xml
-        val tvFajr: TextView = findViewById(R.id.tvFajr)
-        val tvDhuhr: TextView = findViewById(R.id.tvDhuhr)
-        val tvAsr: TextView = findViewById(R.id.tvAsr)
-        val tvMaghrib: TextView = findViewById(R.id.tvMaghrib)
-        val tvIsha: TextView = findViewById(R.id.tvIsha)
+//        val tvFajr: TextView = findViewById(R.id.tvFajr)
+//        val tvDhuhr: TextView = findViewById(R.id.tvDhuhr)
+//        val tvAsr: TextView = findViewById(R.id.tvAsr)
+//        val tvMaghrib: TextView = findViewById(R.id.tvMaghrib)
+//        val tvIsha: TextView = findViewById(R.id.tvIsha)
 
         // Hardcoded prayer times data
         val prayerTimes = mapOf(
@@ -47,11 +47,11 @@ class MainActivity : ComponentActivity() {
         )
 
         // Set the TextView text using the prayer times data
-        tvFajr.text = "Fajr: ${prayerTimes["Fajr"]}"
-        tvDhuhr.text = "Dhuhr: ${prayerTimes["Dhuhr"]}"
-        tvAsr.text = "Asr: ${prayerTimes["Asr"]}"
-        tvMaghrib.text = "Maghrib: ${prayerTimes["Maghrib"]}"
-        tvIsha.text = "Isha: ${prayerTimes["Isha"]}"
+//        tvFajr.text = "Fajr: ${prayerTimes["Fajr"]}"
+//        tvDhuhr.text = "Dhuhr: ${prayerTimes["Dhuhr"]}"
+//        tvAsr.text = "Asr: ${prayerTimes["Asr"]}"
+//        tvMaghrib.text = "Maghrib: ${prayerTimes["Maghrib"]}"
+//        tvIsha.text = "Isha: ${prayerTimes["Isha"]}"
     }
 }
 
