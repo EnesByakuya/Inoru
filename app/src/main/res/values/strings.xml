@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Inoru</string>
+    <string name="prayer_time_fajr">Fajr: %1$s</string>
+    <string name="prayer_time_dhuhr">Dhuhr: %1$s</string>
+    <string name="prayer_time_asr">Asr: %1$s</string>
+    <string name="prayer_time_maghrib">Maghrib: %1$s</string>
+    <string name="prayer_time_isha">Isha: %1$s</string>
 </resources>
