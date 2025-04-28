@@ -5,4 +5,40 @@
     <string name="prayer_time_asr">Asr: %1$s</string>
     <string name="prayer_time_maghrib">Maghrib: %1$s</string>
     <string name="prayer_time_isha">Isha: %1$s</string>
+
+    <string-array name="country_list">
+        <item>Netherlands</item>
+        <item>Germany</item>
+        <item>Belgium</item>
+        <item>Turkiye</item>
+    </string-array>
+
+    <string-array name="netherlands_cities">
+        <item>Delft</item>
+        <item>Rotterdam</item>
+        <item>Amsterdam</item>
+        <item>Utrecht</item>
+    </string-array>
+
+    <string-array name="germany_cities">
+        <item>Berlin</item>
+        <item>Munich</item>
+        <item>Frankfurt</item>
+    </string-array>
+
+    <string-array name="belgium_cities">
+        <item>Brussels</item>
+        <item>Antwerp</item>
+        <item>Ghent</item>
+    </string-array>
+
+    <string-array name="turkiye_cities">
+        <item>Istanbul</item>
+        <item>Ankara</item>
+        <item>Izmir</item>
+    </string-array>
+
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+
 </resources>
