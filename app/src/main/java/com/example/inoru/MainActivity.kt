@@ -14,6 +14,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,6 +72,10 @@ class MainActivity : ComponentActivity() {
                     else -> "NL" // Default fallback
                 }
 
+                val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+                val currentDate = LocalDateTime.now().format(formatter)
+                Log.d("Current Date", currentDate)
+
                 val cityAdapter = ArrayAdapter.createFromResource(
                     parent.context,
                     cityArrayId,
@@ -89,7 +95,7 @@ class MainActivity : ComponentActivity() {
                     ) {
                         val selectedCity = cityParent.getItemAtPosition(cityPosition).toString()
 
-                        val call = api.getPrayerTimes("18-04-2025", selectedCity, countryCode, 13)
+                        val call = api.getPrayerTimes(currentDate, selectedCity, countryCode, 13)
                         call.enqueue(object : Callback<PrayerTimesResponse> {
                             override fun onResponse(
                                 call: Call<PrayerTimesResponse>,
