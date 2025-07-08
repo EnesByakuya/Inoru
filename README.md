@@ -1,4 +1,4 @@
 ## Inoru
-Fetches prayer times from the prayer times API.
+Fetches prayer times from a prayer times API.
 
 Just wanted to know how Kotlin worked...
